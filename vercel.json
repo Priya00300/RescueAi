@@ -7,25 +7,6 @@
       "buildCommand": "npx vite build",
       "installCommand": "npm install",
       "outputDirectory": "dist"
-    },
-    "backend": {
-      "root": "backend",
-      "framework": "fastapi",
-      "entrypoint": "api/server.py"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": {
-        "service": "backend"
-      }
-    },
-    {
-      "source": "/(.*)",
-      "destination": {
-        "service": "frontend"
-      }
-    }
-  ]
+  }
 }
