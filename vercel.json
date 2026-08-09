@@ -8,5 +8,13 @@
       "installCommand": "npm install",
       "outputDirectory": "dist"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "frontend"
+      }
+    }
+  ]
 }
