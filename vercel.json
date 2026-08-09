@@ -3,7 +3,10 @@
   "services": {
     "frontend": {
       "root": ".",
-      "framework": "vite"
+      "framework": "vite",
+      "buildCommand": "npx vite build",
+      "installCommand": "npm install",
+      "outputDirectory": "dist"
     },
     "backend": {
       "root": "backend",
